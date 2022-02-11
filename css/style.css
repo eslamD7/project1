@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /*################################*/
+  /*##### Class//header       ######*/
+  /*################################*/
+
+  a {
+    text-decoration: none;
+    color: white !important;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    display: inline-block;
+    height: 40px;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
+  .header-ul {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    font-family: Verdana, sans-serif;
+    height: 40px;
+  }
+
+  .header-ul li {
+    list-style-type: none;
+  }
+
+  #search {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #eslam {
+    background-color: #009688 !important;
+    margin: 0;
+  }
+
+  .header-ul > a {
+    position: absolute;
+    right: 10px;
+    padding-left: 5px;
+    top: 0;
+  }
+
+  .fa-magnifying-glass,
+  .fa-house {
+    padding-right: 15px;
+  }
+
+  .fa-caret-down {
+    padding-left: 5px;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 18px;
+  }
+
+  a:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+  .parent-links {
+    background-color: rgb(223, 222, 222);
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    position: absolute;
+    top: 40px;
+    right: 460px;
+    visibility: hidden;
+  }
+
+  #Dropdown:hover .parent-links {
+    visibility: visible;
+  }
+
+  /*################################*/
+  /*##### Class//image        ######*/
+  /*################################*/
+
+  .image {
+    background-image: url("../image/sailboat.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .learn-css {
+    margin-top: 340px;
+    width: 100px;
+    height: 40px;
+    background-color: #009688;
+    color: #000;
+  }
+
+  /*################################*/
+  /*##### Class//Our-Team     ######*/
+  /*################################*/
+  .Our-Team {
+    padding-top: 50px;
+  }
+  .Our-Team h1 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-weight: 200;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .Our-Team h1 + p {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+  .Our-Team .teams {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+  .Our-Team .team img {
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  .Our-Team .team h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+  }
+  .Our-Team .team p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+  }
+  .team img:hover {
+    opacity: 0.5;
+  }
+  .our-work {
+    display: grid;
+    grid-template-columns: 2fr 0.9fr 0.9fr 0.9fr;
+    grid-template-rows: 0.2fr 1.6fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . ."
+      "Lorem- c-1 c-2 c-3"
+      ". . . .";
+    gap: 0px 10px;
+    background-color: #333333;
+    color: #fff;
+  }
+
+  .Lorem- {
+    grid-area: Lorem-;
+    height: 400px;
+    padding-left: 20px;
+    width: 250px;
+  }
+  .Lorem- h1 {
+    padding: 0 20px 20px 20px;
+    font-size: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 45px;
+  }
+
+  .Lorem- p {
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .c-1 {
+    grid-area: c-1;
+  }
+
+  .c-2 {
+    grid-area: c-2;
+  }
+
+  .c-3 {
+    grid-area: c-3;
+    margin-right: 20px;
+  }
+  .our-work img {
+    width: 240px;
+  }
+
+  .our-work .Work {
+    background-color: #fff;
+    color: #000;
+  }
+  .Work h4 {
+    margin-left: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .Work p {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  /*################################*/
+  /*##### Class// PRICING    ######*/
+  /*################################*/
+  .pricing-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "basic Pro Premium";
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+
+  .basic {
+    grid-area: basic;
+    width: 300px;
+  }
+
+  .Pro {
+    grid-area: Pro;
+  }
+
+  .Premium {
+    grid-area: Premium;
+  }
+  .PRICING {
+    margin-top: 50px;
+  }
+  .PRICING h1 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-weight: 200;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .PRICING h1 + p {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+  .PRICING .basic-table {
+    border: 2px solid #eee;
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .PRICING .basic-table td {
+    border-bottom: 2px solid #eee;
+    padding: 10px;
+    outline: 0px;
+    text-align: center;
+    width: 300px;
+    /***fontstyle***/
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  #first-td {
+    height: 80px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    background-color: #000;
+    color: #fff;
+  }
+  .PRICING button {
+    background-color: #009688;
+    border: 2px solid #009688;
+    color: #fff;
+    font-size: 11px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 10px;
+    width: 90px;
+  }
+  #button-td {
+    background-color: #f0f0f0 !important;
+    padding: 10px;
+  }
+  #dollar {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  #dollar-td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #two-td {
+    background-color: #666666;
+    height: 80px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+  }
+  table:hover {
+    box-shadow: 3px 6px 15px 12px rgba(212, 212, 212, 1);
+  }
+  /*################################*/
+  /*##### Class// Contact Us  ######*/
+  /*################################*/
+  .contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "Address forms";
+    background-color: #f0f0f0;
+  }
+  .Address,
+  .forms {
+    /*   border: 2px solid red; */
+  }
+  .Address {
+    grid-area: Address;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  .Address h2 {
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+    border-bottom: 4px solid #009688;
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  .Address h4 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .Address p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .fa-location-dot,
+  .fa-phone,
+  .fa-envelope {
+    color: #009688;
+    margin-right: 5px;
+  }
+  .forms {
+    grid-area: forms;
+    margin: 20px;
+    margin-top: 40px;
+    background-color: #fff !important;
+    padding: 20px;
+    box-shadow: 2px 4px 10px 8px rgb(212 212 212);
+  }
+  .forms label {
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .forms input[type="text"],
+  input[type="Email"] {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    height: 30px;
+    width: 800px;
+  }
+  .forms div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .forms div > button {
+    background-color: #000 !important;
+    color: #fff;
+    border: none;
+  }
+
+  /*################################*/
+  /*##### Class//maps         ######*/
+  /*################################*/
+
+  .maps {
+    background-image: url("../image/map.jpg");
+    background-size: cover;
+    width: 100%;
+  }
+
+  /*################################*/
+  /*##### Class//footer       ######*/
+  /*################################*/
+  .footer {
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+
+  .fa-brands {
+    background-color: #009688;
+    font-size: 40px;
+  }
+
+  .footer h3,
+  h4 {
+    margin-top: 0px;
+
+    padding-top: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
